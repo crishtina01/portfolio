@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <style>
+        table, th, td {
+            border: 1px solid black;
+          }
+        </style>
+        <center>
+            <H1> Registration Form </H1>
+        </center>
+        
+    </head>
+        <table style="width:30%" bgcolor="grey" align=center>
+        <tr bgcolor="grey"  align="center">
+            <td> Enter Your First Name </td>
+            <td>
+            <input type="text" Name="Name" size="65"maxlength=65><br>
+            </td>
+        </tr>
+        
+          
+        
+        </tr>
+        
+        <tr bgcolor="grey"  align="center">
+          
+          <td> Enter Your Last Name</td>
+          <td>
+            <input type="text" Name="Name" size="65" maxlength="65"><br><br>
+        </td>
+      
+        </tr>
+      
+        <tr bgcolor="grey" align="center">
+            <td>Enter Your Password </td>
+
+            <td>
+                <input type="password" name="Password" id="pwd" pattern=".{8,}" title="Minimum 12 characters" required/><br>
+                
+            </td>
+        </tr>
+         <tr bgcolor="grey" align="center">
+            <td> ReEnter Your Password</td>
+            <td>
+                <input  type="password" name="Confirm_Password" onkeyup = "check()">
+               <span id="message"></span>
+            </td>
+         </tr> 
+         <tr bgcolor="grey" align="center">
+            <td> Enter Your Mobile </td>
+            <td> 
+                <input  type="tel" pattern="[0-9]{3}-[0-9]{7}" title="Please enter in the format xxx-xxxxxxx." name="Mobile"/>
+
+            </td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td>Enter Your Address :   </td>
+            <td>            
+                <textarea rows="4" cols="30" name="Address" form="usrform"></textarea>
+                
+            </td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td>select your gender </td>
+            <td>
+            <input  type="radio" name="Gender" value="Male" >male
+            <input  type="radio" name="gender" value="female">female
+            <input type="radio" name="gender" value="other">other
+            </td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td> Select Your Hobbies </td>
+            <td>
+                <input type="checkbox" name="Hobby[]" value="Music"> Music
+                <input type="checkbox" name="Hobby[]" value="Sports"> Sports
+                <input type="checkbox" name="Hobby[]" value="dancing">dancing
+            </td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td> Select your DOB</td>
+            <td><input type="date" name="DOB"/></td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td>Upload Your Picture</td>
+            <td><input type="file" name="pic" (only jpeg,png and gif format allowed)></td>
+         </tr>
+         <tr bgcolor="grey" align="center">
+            <td>
+                <input type="button" name="submit" value="save my data">
+                <input type="reset" name="Reset" value="reset">
+            </td>
+         </tr>
+         </table>
+
+      
+          
+</html>
